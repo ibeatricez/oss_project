@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.22)  18 FEB 2025 10:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.11.22)  18 FEB 2025 17:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1279,7 +1279,7 @@ LaTeX Font Info:    Redeclaring math accent \widehat on input line 11.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 11.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<Pictures/logos.jpg, id=11, 816.04875pt x 118.19156pt>
+<Pictures/logos.jpg, id=31, 816.04875pt x 118.19156pt>
 File: Pictures/logos.jpg Graphic file (type jpg)
 <use Pictures/logos.jpg>
 Package pdftex.def Info: Pictures/logos.jpg  used on input line 21.
@@ -1321,7 +1321,7 @@ LaTeX Font Info:    Trying to load font information for U+esint on input line 21
  (/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-<Pictures/sceauULB.jpg, id=12, 1250.6725pt x 1250.6725pt>
+<Pictures/sceauULB.jpg, id=32, 1250.6725pt x 1250.6725pt>
 File: Pictures/sceauULB.jpg Graphic file (type jpg)
 <use Pictures/sceauULB.jpg>
 Package pdftex.def Info: Pictures/sceauULB.jpg  used on input line 21.
@@ -1343,14 +1343,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has be
 l.21 }
        [2
 
-{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./content/chapters.tex (./content/chapters/introduction.tex))
+{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}] (./content/chapters.tex (./content/chapters/introduction.tex) (./content/chapters/background.tex [1
+
+]) (./content/chapters/implementation.tex [2
+
+]) (./content/chapters/evaluation.tex [3
+
+]) (./content/chapters/conclusion.tex [4
+
+]) (./content/chapters/references.tex [5
+
+]))
 
 Package biblatex Warning: Type 'article' not found on input line 27.
 
 
 LaTeX Warning: Empty bibliography on input line 27.
 
-[1
+[6
 
 ] (./main.aux)
  ***********
@@ -1362,7 +1372,7 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 89AA336ABD998F6B593B7DFA9B8F9796;104.
+(rerunfilecheck)             Checksum: 76FEB5FCB31B3815DD9A64B211F2D68E;594.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -1373,18 +1383,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47188 strings out of 474116
- 1041732 string characters out of 5743681
+ 47234 strings out of 474116
+ 1042925 string characters out of 5743681
  2026521 words of memory out of 5000000
- 68780 multiletter control sequences out of 15000+600000
+ 68802 multiletter control sequences out of 15000+600000
  607259 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,12n,121p,1178b,1853s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb>
-Output written on main.pdf (3 pages, 390124 bytes).
+Output written on main.pdf (8 pages, 399092 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
- 4 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 103 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
