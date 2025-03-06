@@ -1,7 +1,17 @@
 \babel@toc {english}{}\relax 
 \contentsline {chapter}{Introduction}{1}{chapter*.1}%
 \contentsline {chapter}{Background}{2}{chapter*.2}%
-\contentsline {chapter}{Description}{3}{chapter*.3}%
-\contentsline {chapter}{Experimental Results}{4}{chapter*.4}%
-\contentsline {chapter}{Discussion and Conclusion}{5}{chapter*.5}%
-\contentsline {chapter}{References}{6}{chapter*.6}%
+\contentsline {section}{Windows Security Landscape}{2}{section*.3}%
+\contentsline {section}{Evasion Techniques in Windows}{3}{section*.6}%
+\contentsline {subsection}{1. Hidden Command Execution with LOLBins}{3}{section*.7}%
+\contentsline {subsection}{2. Keyloggers — Silent Data Capture}{4}{section*.9}%
+\contentsline {subsection}{3. Process Injection \& Hollowing}{4}{section*.10}%
+\contentsline {subsection}{4. Backdoor Creation \& Persistence Techniques}{5}{section*.12}%
+\contentsline {section}{Defender and EDR — Strengths \& Weaknesses}{6}{section*.15}%
+\contentsline {subsection}{1. Detection Methods Used}{6}{section*.16}%
+\contentsline {subsection}{2. Key Limitations}{7}{section*.17}%
+\contentsline {section}{Why Real-World Testing Matters}{7}{section*.19}%
+\contentsline {chapter}{Description}{9}{chapter*.22}%
+\contentsline {chapter}{Experimental Results}{10}{chapter*.23}%
+\contentsline {chapter}{Discussion and Conclusion}{11}{chapter*.24}%
+\contentsline {chapter}{References}{12}{chapter*.25}%
