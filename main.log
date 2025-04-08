@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.3.7)  8 APR 2025 17:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.3.7)  8 APR 2025 19:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1279,7 +1279,7 @@ LaTeX Font Info:    Redeclaring math accent \widehat on input line 13.
 LaTeX Font Info:    Redeclaring math accent \widetilde on input line 13.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<Pictures/logos.jpg, id=111, 816.04875pt x 118.19156pt>
+<Pictures/logos.jpg, id=115, 816.04875pt x 118.19156pt>
 File: Pictures/logos.jpg Graphic file (type jpg)
 <use Pictures/logos.jpg>
 Package pdftex.def Info: Pictures/logos.jpg  used on input line 23.
@@ -1321,7 +1321,7 @@ LaTeX Font Info:    Trying to load font information for U+esint on input line 23
  (/usr/local/texlive/2024/texmf-dist/tex/latex/esint/uesint.fd
 File: uesint.fd 
 )
-<Pictures/sceauULB.jpg, id=112, 1250.6725pt x 1250.6725pt>
+<Pictures/sceauULB.jpg, id=116, 1250.6725pt x 1250.6725pt>
 File: Pictures/sceauULB.jpg Graphic file (type jpg)
 <use Pictures/sceauULB.jpg>
 Package pdftex.def Info: Pictures/sceauULB.jpg  used on input line 23.
@@ -1336,7 +1336,7 @@ File: t1cmss.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.26 ...iscussion and Conclusion}{13}{chapter*.34}
+l.27 ...iscussion and Conclusion}{14}{chapter*.35}
                                                   % [2
 
 {/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}])
@@ -1355,7 +1355,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--18
 []|\T1/futs/m/n/10.95 Windows De-fender Ex-ploit
  []
 
-<Pictures/windowssecuritylayer.png, id=158, 573.8238pt x 354.8457pt>
+<Pictures/windowssecuritylayer.png, id=163, 573.8238pt x 354.8457pt>
 File: Pictures/windowssecuritylayer.png Graphic file (type png)
 <use Pictures/windowssecuritylayer.png>
 Package pdftex.def Info: Pictures/windowssecuritylayer.png  used on input line 35.
@@ -1375,7 +1375,7 @@ File: tikzlibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
  (/usr/local/texlive/2024/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )) [4]
-<Pictures/Fig1_Tarrask-malware-creates-new-registry-keys-along-with-the-creation-of-new-scheduled-tasks.png, id=180, 401.5pt x 295.60437pt>
+<Pictures/Fig1_Tarrask-malware-creates-new-registry-keys-along-with-the-creation-of-new-scheduled-tasks.png, id=185, 401.5pt x 295.60437pt>
 File: Pictures/Fig1_Tarrask-malware-creates-new-registry-keys-along-with-the-creation-of-new-scheduled-tasks.png Graphic file (type png)
 <use Pictures/Fig1_Tarrask-malware-creates-new-registry-keys-along-with-the-creation-of-new-scheduled-tasks.png>
 Package pdftex.def Info: Pictures/Fig1_Tarrask-malware-creates-new-registry-keys-along-with-the-creation-of-new-scheduled-tasks.png  used on input line 199.
@@ -1386,7 +1386,7 @@ Overfull \hbox (31.21489pt too wide) in paragraph at lines 208--208
  []
 
 [6 <./Pictures/Fig1_Tarrask-malware-creates-new-registry-keys-along-with-the-creation-of-new-scheduled-tasks.png>]
-<Pictures/test_lab_env.png, id=192, 574.18515pt x 364.9635pt>
+<Pictures/test_lab_env.png, id=197, 574.18515pt x 364.9635pt>
 File: Pictures/test_lab_env.png Graphic file (type png)
 <use Pictures/test_lab_env.png>
 Package pdftex.def Info: Pictures/test_lab_env.png  used on input line 249.
@@ -1395,7 +1395,12 @@ Package pdftex.def Info: Pictures/test_lab_env.png  used on input line 249.
 
 ] [10
 
-] [11]) (./content/chapters/conclusion.tex [12]) (./content/chapters/references.tex [13
+] [11]
+Overfull \hbox (8.60207pt too wide) in paragraph at lines 71--72
+\T1/futs/m/n/10.95 This will lis-ten for the in-com-ing TCP con-nec-tion and save the re-ceived log data into \T1/cmtt/m/n/10.95 receivedlogs.txt\T1/futs/m/n/10.95 . 
+ []
+
+[12]) (./content/chapters/conclusion.tex [13]) (./content/chapters/references.tex [14
 
 ]
 Overfull \hbox (7.74944pt too wide) in paragraph at lines 7--8
@@ -1409,7 +1414,7 @@ Package biblatex Warning: Type 'article' not found on input line 29.
 
 LaTeX Warning: Empty bibliography on input line 29.
 
-[14
+[15
 
 ] (./main.aux)
  ***********
@@ -1421,7 +1426,7 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 90B391DB24A8C228F5767FD3644EEC3F;4991.
+(rerunfilecheck)             Checksum: FF4BA843446EDA286F5DD90521774871;4917.
 
 Package biblatex Warning: Please (re)run Biber on the file:
 (biblatex)                main
@@ -1432,18 +1437,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 47998 strings out of 474116
- 1061173 string characters out of 5743683
+ 48004 strings out of 474116
+ 1061223 string characters out of 5743683
  2031941 words of memory out of 5000000
- 69503 multiletter control sequences out of 15000+600000
+ 69504 multiletter control sequences out of 15000+600000
  617069 words of font info for 94 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,12n,121p,1178b,2347s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,12n,121p,1178b,2304s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/adobe/utopia/putb8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/adobe/utopia/putr8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/adobe/utopia/putri8a.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfsx1440.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb>
-Output written on main.pdf (17 pages, 745484 bytes).
+Output written on main.pdf (18 pages, 748412 bytes).
 PDF statistics:
- 278 PDF objects out of 1000 (max. 8388607)
- 238 compressed objects within 3 object streams
- 58 named destinations out of 1000 (max. 500000)
- 246 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 291 PDF objects out of 1000 (max. 8388607)
+ 250 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 254 words of extra memory for PDF output out of 10000 (max. 10000000)
 
