@@ -13,5 +13,15 @@
 \contentsline {section}{Why Real-World Testing Matters}{7}{section*.19}%
 \contentsline {chapter}{Description}{9}{chapter*.22}%
 \contentsline {chapter}{Experimental Results}{10}{chapter*.23}%
-\contentsline {chapter}{Discussion and Conclusion}{11}{chapter*.24}%
-\contentsline {chapter}{References}{12}{chapter*.25}%
+\contentsline {section}{Introduction for Keylogger - ** REVIEW - TO BE REWRITTEN **}{10}{section*.24}%
+\contentsline {section}{Keylogger as a Stealth Attack Tool}{10}{section*.25}%
+\contentsline {section}{Bypassing Detection Mechanisms}{10}{section*.26}%
+\contentsline {subsection}{Persistence and Startup}{10}{section*.27}%
+\contentsline {section}{How to Use the Keylogger}{11}{section*.28}%
+\contentsline {subsection}{Installation and Setup}{11}{section*.29}%
+\contentsline {subsection}{Keylogger Features}{11}{section*.30}%
+\contentsline {subsection}{Test Results}{11}{section*.31}%
+\contentsline {section}{Ethical and Security Implications}{12}{section*.32}%
+\contentsline {section}{Conclusion}{12}{section*.33}%
+\contentsline {chapter}{Discussion and Conclusion}{13}{chapter*.34}%
+\contentsline {chapter}{References}{14}{chapter*.35}%

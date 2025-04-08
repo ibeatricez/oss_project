@@ -2,14 +2,65 @@
 
 \chapter{Experimental Results}
 
-% \begin{enumerate}
-%     \item \textbf{:}
-% \end{enumerate}
+\section{Introduction for Keylogger - ** REVIEW - TO BE REWRITTEN **}
+Keyloggers are one of the most common forms of malware used in both criminal cyberattacks and red-team cybersecurity testing. They log keystrokes entered by a user, often capturing sensitive information such as passwords, emails, chats, and even cryptographic keys. This report explores a practical implementation of a stealthy keylogger on Windows, with an emphasis on bypassing detection mechanisms, achieving persistence, and evaluating its implications for Operating Systems Security.
 
+\section{Keylogger as a Stealth Attack Tool}
+The keylogger discussed in this report was developed using Python and compiled into an executable with PyInstaller. It operates entirely in user-mode and employs several stealth techniques to avoid detection:
+\begin{itemize}
+    \item Logs keystrokes and active window titles
+    \item Captures clipboard content
+    \item Takes periodic screenshots
+    \item Runs in the background with no visible window
+    \item Adds itself to the Windows Startup folder for persistence
+\end{itemize}
 
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=0.8\textwidth]{Picture/.png}
-%     \caption{caption}
-%     \label{fig:fig name}
-% \end{figure}
+\section{Bypassing Detection Mechanisms}
+Despite being simple in design, the keylogger was not flagged by Windows Defender in multiple test environments. This reveals a significant gap in signature-based AV systems. Features like the use of legitimate Python libraries (e.g., \texttt{pynput}, \texttt{pyperclip}, \texttt{PIL}), absence of obvious payloads, and stealth execution via \texttt{--noconsole} compilation help it evade detection.
+
+\subsection{Persistence and Startup}
+The executable self-copies to the user's Startup folder with a disguised name (e.g., \texttt{winupdater.exe}). This allows it to run at every login without requiring administrative privileges. Alternative persistence methods like registry modification or scheduled tasks could further enhance its stealth.
+
+\section{How to Use the Keylogger}
+
+\subsection{Installation and Setup}
+\begin{enumerate}
+    \item Install Python 3 and the required libraries by running:
+    \begin{verbatim}
+pip install pynput pywin32 pyperclip Pillow
+    \end{verbatim}
+
+    \item Save the Python script as \texttt{keylogge.py} in your preferred directory.
+
+    \item Compile the script into a hidden executable using PyInstaller:
+    \begin{verbatim}
+pyinstaller --onefile --noconsole keylogger_advanced.py
+    \end{verbatim}
+    This will create a \texttt{dist} directory containing the \texttt{keylogger.exe} file.
+
+    \item Move the \texttt{keylogger.exe} file to a location of your choice.
+
+    \item To run the keylogger, double-click the \texttt{keylogger.exe} file. It will start logging keystrokes and taking screenshots.
+\end{enumerate}
+
+\subsection{Keylogger Features}
+\begin{itemize}
+    \item Start logging keystrokes into \texttt{logs/keylogs.txt}
+    \item Capture screenshots every 60 seconds
+    \item Save clipboard contents
+    \item Automatically copy itself to the Windows Startup folder with the name \texttt{winupdater.exe}
+    \item To stop the keylogger manually, press the \texttt{k} key twice in any input field
+\end{itemize}
+
+\subsection{Test Results}
+\begin{itemize}
+    \item Windows Defender did not detect or quarantine the executable
+    \item Logs and screenshots were captured without interruption
+    \item The Startup entry was successfully created and loaded upon reboot
+\end{itemize}
+
+\section{Ethical and Security Implications}
+This demonstration underlines how even basic scripting can be weaponized when combined with knowledge of OS internals. The same techniques can be used for both malicious activity and legitimate penetration testing. Therefore, understanding and defending against such tools is critical in the context of Operating Systems Security.
+
+\section{Conclusion}
+This chapter demonstrates how a stealth keylogger can be used as a reliable, persistent, and undetectable tool under standard configurations. It emphasizes the need for behavioral detection, endpoint monitoring, and proper user education to detect and mitigate such threats.
