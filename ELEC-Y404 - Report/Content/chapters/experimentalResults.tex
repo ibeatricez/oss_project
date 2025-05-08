@@ -1,0 +1,108 @@
+\setcounter{secnumdepth}{-1}
+
+\section{Experimental Results}
+
+\subsection{Introduction for Keylogger}
+Keyloggers are among the most commonly used tools in offensive security, whether for unethical spying or legitimate penetration testing. This experiment focuses on building and testing a stealth keylogger using Python on Windows, emphasizing its capabilities to remain undetected by built-in security systems and exfiltrate collected data to a remote server. The goal was to demonstrate how attacker tools can be crafted with minimal code and maximum stealth, giving insight into the offensive side of Operating Systems Security.
+
+\subsection{Keylogger as a Stealth Attack Tool}
+The keylogger discussed in this report was developed using Python and compiled into an executable with PyInstaller. It operates entirely in user-mode and employs several stealth techniques to avoid detection:
+\begin{itemize}
+    \item Logs keystrokes and active window titles
+    \item Captures clipboard content
+    \item Takes periodic screenshots
+    \item Runs in the background with no visible window
+    \item Adds itself to the Windows Startup folder for persistence
+    \item Sends collected logs to a Kali Linux machine over a TCP connection
+\end{itemize}
+
+\subsection{Bypassing Detection Mechanisms}
+Despite being simple in design, the keylogger was not flagged by Windows Defender in multiple test environments. This highlights the weaknesses of signature-based detection tools. The use of legitimate Python libraries (e.g., \texttt{pynput}, \texttt{pyperclip}, \texttt{Pillow}), absence of suspicious behavior, and use of `--noconsole` flag make it appear harmless to default security solutions.
+
+\subsubsection{Persistence and Startup}
+The executable copies itself to the user's Startup folder under the name \texttt{winupdater.exe}. This ensures it runs automatically on every login, without needing admin rights. This simple persistence method is widely used in real-world malware.
+
+\subsection{How to Use the Keylogger}
+
+\subsubsection{Installation and Setup}
+\begin{enumerate}
+    \item Open a terminal on Windows and install Python packages:
+    \begin{verbatim}
+    pip install pynput pywin32 pyperclip Pillow
+
+    # If pip is not recognized:
+    python -m pip install pynput pywin32 pyperclip Pillow
+    \end{verbatim}
+
+    \item Save the full keylogger script as \texttt{keylogger.py} using any text editor (e.g., Notepad).
+
+    \item Open a terminal (Command Prompt or PowerShell) in the folder where \texttt{keylogger.py} is located and run:
+    \begin{verbatim}
+    python -m PyInstaller --onefile --noconsole keylogger.py
+    \end{verbatim}
+    This will create a \texttt{dist} folder containing the file \texttt{keylogger.exe}.
+
+    \item To run the keylogger, open Command Prompt, navigate to the \texttt{dist} folder, and run:
+    \begin{verbatim}
+    cd dist
+    keylogger.exe
+    \end{verbatim}
+
+    \item The script will automatically:
+    \begin{itemize}
+        \item Start logging keystrokes into \texttt{logs/keylogs.txt}
+        \item Save clipboard content
+        \item Take screenshots every 60 seconds
+        \item Copy itself to the Startup folder as \texttt{winupdater.exe}
+        \item Open a TCP socket to send logs to a listening Kali machine
+    \end{itemize}
+
+    \item \textbf{Ensure TCP exfiltration works:}
+    The Windows system must be able to reach the Kali machine's IP. Use this command in CMD to test:
+    \begin{verbatim}
+    ping <kali-ip-address>
+    \end{verbatim}
+    Replace \texttt{<kali-ip-address>} with your actual Kali IP (e.g., 192.168.55.X).
+
+    \item On the Kali machine, open a terminal and run the TCP listener before the keylogger exits:
+    \begin{verbatim}
+    nc -lvnp 4444 > received_logs.txt
+    \end{verbatim}
+    This will listen for the incoming TCP connection and save the received log data into \texttt{receivedlogs.txt}.
+
+    \item To stop the keylogger, press the \texttt{q} key twice in any input field. The logs will then be sent to Kali over the TCP connection.
+\end{enumerate}
+
+\subsubsection{Keylogger Features}
+\begin{itemize}
+    \item Logs keystrokes to \texttt{logs/keylogs.txt}
+    \item Captures clipboard content
+    \item Takes screenshots every 60 seconds
+    \item Stealth mode via \texttt{--noconsole}
+    \item Self-replication to Startup folder for persistence
+    \item TCP exfiltration of logs to remote Kali Linux machine
+    \item Kill-switch with double \texttt{q} press
+\end{itemize}
+
+\subsubsection{Test Results}
+\begin{itemize}
+    \item Windows Defender did not detect the executable during or after execution
+    \item TCP exfiltration succeeded from Windows to Kali using \texttt{nc}
+    \item Screenshots and clipboard content were accurately captured
+    \item Log file was successfully transferred upon exit
+\end{itemize}
+
+\subsection{Ethical and Security Implications}
+This practical demonstration reveals how even non-complicated scripts can act as effective attack tools when they exploit weak points in system behavior and antivirus limitations. While this project serves an educational purpose, it also underscores the need for strong behavioral detection, user awareness, and advanced endpoint monitoring.
+
+\subsection{Conclusion}
+This experiment highlights the feasibility of implementing a stealthy, persistent, and network-aware keylogger using basic tools. Understanding the construction and behavior of such malware allows defenders to better anticipate, detect, and neutralize threats in real-world systems.
+
+\subsection{Future Work}
+Future work could involve:
+\begin{itemize} 
+    \item Conducting a comparative analysis of detection rates across different antivirus solutions
+    \item Conducting a user study to assess the effectiveness of user awareness training in preventing keylogger attacks
+    \item Collaborating with cybersecurity professionals to develop best practices for detecting and mitigating keylogger threats
+    \item Exploring the legal and ethical implications of keylogger development and usage
+\end{itemize}
