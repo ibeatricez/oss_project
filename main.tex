@@ -1,0 +1,31 @@
+
+\documentclass{ULBreport}
+
+\sceau{Pictures/sceauULB.jpg} %To change depending if ULB(sceauULB.jpg) or VUB course (zegelVUB.jpg)
+
+\addbibresource{biblio.bib}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{tikz}
+\usepackage{listings}
+\begin{document}
+
+\titleULB{
+	title={Advanced Security Evasion in Windows with Hidden Commands},
+	course={Operating Systems and Security},
+	author={\textit{Authors :} \\ Zinar MUTLU \\ Andranik VOSKANYAN \\ Cedric SIPAKAM},
+	date={\textbf{Academic year:} \\ 2024-2025},
+	teacher={\textit{Professor :} \\ Prof. Bruno da Silva},
+	logo={Pictures/logos.jpg},
+        manyAuthor
+}
+
+\input{content/chapters.tex}
+
+%Bibliography
+\nocite{*}
+\printbibliography[type=article,title=Articles]
+
+\end{document}
