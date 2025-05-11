@@ -42,7 +42,9 @@
 		This project focuses on:
 		\begin{itemize}
 			\item \textbf{Operating System:} Windows 11 Home
-			\item \textbf{Primary Security Silution:} Windows Defender, [...], [....]
+			\item \textbf{Primary Security Solution:} Windows Defender, [...], [....]
+			\item \textbf{Attacker Tools:} A combination of publicly available tools: Microsoft Windows Command Prompt, Netcat/Nmap, Python.
+			\item \textbf{Exclusions:} This study does not cover all possible evasion techniques or every security product available on the market. The focus is on the selected methods.
 		\end{itemize}
 		
 		
@@ -51,7 +53,36 @@
 		
 		\section{Background}
 			\subsection{Fundamentals of Security Evasion}
+			Security Evasion refers to the set of techniques and strategies employed by attacker to avoid detection by security mechanism such as antivirus software, Endpoint Detection and Response Solutions (EDR), Intrusion Detection/Prevention Systems (IDS/IPS), and firewalls. The primary goal of evasion is to allow malicious activities to proceed unnoticed, enabling attackers to achieve their objectives, which could range from data heft and espionage to system disruption or financial gain. Attacker motivations are diverse but often include maintaining stealth to ensure long-term access a.k.a persistence, escalating privileges to gain deeper system control, and exfiltrating sensitive information without triggering alarms.
+			
+			
 			\subsection{Overview of Windows Security Architecture}
+				The Windows Operating System incorporates a multi-layered security architecture designed to protect against a wide array of threats.
+				\begin{itemize}
+					\item \textbf{Windows Defender Antivirus:} This is the built-in anti-malware solution in Windows. Its features include:
+						\begin{itemize}
+							\item Real-time scanning
+							\item Behavior monitoring
+							\item Anti-malware Scan Interface (AMSI)
+							\item Cloud-delivered protection
+							\item Network Inspection System (NIS)
+							\item Controlled Folder Access
+						\end{itemize}
+				\item \textbf{Windows Event Logging:} The OS records a wide variety of events related to system, security, application, PowerShell, and other application. Specific event IDs can indicate suspicious activities, login attempts, process creation, and security policy changes.
+				\item \textbf{User Account Control (UAC):} This helps prevent unauthorized changes to the system by prompting for permission or an administrator password before performing actions that could potentially affect the computer's operation or security.
+				\item \textbf{Windows Firewall:} Controls network traffic flowing in and out of the system, based on configured rules.
+				\item \textbf{BitLocker Drive Encryption:} Provides full-disk encryption to protect data at rest
+				\item  \textbf{AppLocker/Windows Defender Application Control (WDAC):} Allows administrators to control which applications and files users can run.
+				\end{itemize}
+				
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=\linewidth]{Pictures/windowssecuritylayer}
+					\caption{Components of the Windows Security Architecture}
+					\label{fig:windowssecuritylayer}
+				\end{figure}
+				
+				
 			\subsection{Theoretical Overview of Attacker Techniques Investigated}
 				\subsubsection{Keyloggers}
 				\subsubsection{Backdoors and Remote Access}
