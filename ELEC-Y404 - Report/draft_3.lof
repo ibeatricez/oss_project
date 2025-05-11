@@ -1,3 +1,0 @@
-\contentsline {figure}{\numberline {1}{\ignorespaces Diagram showing the layered security stack in Windows (Defender, Firewall, AMSI, EDR)}}{4}{figure.caption.6}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Screenshot of malicious task created via \texttt {schtasks} command in Windows Task Scheduler}}{7}{figure.caption.15}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Test Lab Setup: Attacker (Kali Linux) attacking Target (Windows) with monitoring via Wireshark, Event Viewer, and Sysmon}}{8}{figure.caption.21}%
