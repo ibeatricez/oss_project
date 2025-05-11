@@ -16,18 +16,39 @@
 		\newpage
 		
 		\begin{abstract}
-			\textbf{[Finish the Abstract at the end of the report]}
-			\textbf{Description:} This project investigates the efficacy of Windows security solutions, primarily focusing on Windows Defender, in detecting and responding to advanced stealthy attack techniques. The study evaluates a range of common attacker methodologies including the deployment of keyloggers, creation of backdoors for remote access, non-visual command execution leveraging built-in system tools, process injection for memory manipulation, and various persistence mechanisms designed to maintain unauthorized access. The evaluation involved executing these attack scenarios in a controlled environment while meticulously logging system behavior, network activity, and Windows event logs to analyze the detection capabilities and response of the security software.\\
-			
-			\color{red}
-			\textbf{Results:}\textbf{[ANALYZE WHAT WE DID EXACTLY BEFORE]} The experimental findings indicate varying levels of detection success by Windows Defender. \textcolor{red}{ While some less sophisticated or signature-based attacks, such as basic keylogger file drops or known backdoor patterns, were often identified}, \textcolor{red}{more advanced evasion tactics presented significant challenges}. \textcolor{red}{ Techniques employing fileless malware, Living Off The Land Binaries and Scripts (LOLBAS) for command execution, obfuscated PowerShell commands, and certain process injection methods frequently bypassed default detection mechanisms}. Analysis of logs revealed that enhanced logging, such as PowerShell Script Block Logging and Sysmon, provided crucial telemetry for manual threat hunting where automated alerts were absent. Windows Defender's resource utilization showed moderate increases during active attack simulations.²
-			
-			\textbf{Discussion and Conclusion:} The results underscore that while Windows Defender offers a crucial baseline of protection, sophisticated attackers can employ various evasion techniques to circumvent its defenses. The study highlights the limitations of relying solely on default security configurations and emphasizes the importance of a defense-in-depth strategy. Effective defense against advanced threats necessitates comprehensive logging, proactive threat hunting, and the integration of advanced endpoint detection and response (EDR) capabilities. The findings conclude that continuous adaptation and understanding of evolving attacker tradecraft are paramount for maintaining robust security postures in Windows environments.
-			
+		This project investigates the efficacy of Windows security solutions, primarily focusing on Windows Defender, in detecting and responding to advanced stealthy attack techniques. The study evaluates a range of common attacker methodologies including the deployment of keyloggers, creation of backdoors for remote access, non-visual command execution leveraging built-in system tools, process injection for memory manipulation, and various persistence mechanisms designed to maintain unauthorized access. The evaluation involved executing these attack scenarios in a controlled environment while meticulously logging system behavior, network activity, and Windows event logs to analyze the detection capabilities and response of the security software.
 		\end{abstract}
 		
 		\newpage
 		\section{Introduction}
+		\subsection{Problem Statement and Motivation}
+		The Landscape of cyber threats is constantly evolving, with attackers developing increasingly sophisticated techniques to evade detection by security systems. Detecting these stealthy attacks is a significant challenge for individuals and organization alike. Understanding the methods attackers use to bypass security measures is crucial for defenders to improve their strategies, tools, and overall security posture. This project aims to shed light on these evasion techniques within the Windows operating System, a prevalent target for cyber-attacks.
+		\subsection{Project Aims and Objectives}
+		The Primary aims of this project are:
+		\begin{itemize}
+			\item To evaluate the detection capabilities of Windows Defender, [...], and [....] against a set of specific attacker techniques
+			\item The attacker techniques investigated include:
+				\begin{itemize}
+					\item Keylogger deployment
+					\item Backdoor creation and remote access
+					\item Non-visual command execution and process hiding
+					\item Process injection and memory manipulation
+					\item Persistence techniques
+				\end{itemize}
+			\item To analyze system behavior, network activity, and event logs during these simulated attacks to understand how security solutions respond and what artifacts are generated
+			\item To asses the effectiveness of various evasion methods employed by attackers
+		\end{itemize}
+		\subsection{Scope of the project}
+		This project focuses on:
+		\begin{itemize}
+			\item \textbf{Operating System:} Windows 11 Home
+			\item \textbf{Primary Security Silution:} Windows Defender, [...], [....]
+		\end{itemize}
+		
+		
+		
+		
+		
 		\section{Background}
 			\subsection{Fundamentals of Security Evasion}
 			\subsection{Overview of Windows Security Architecture}
@@ -59,7 +80,21 @@
 			\subsection{Evaluation Criteria}
 
 		\section{Experimental Results}
+			\subsection{Keylogger Deployment and Detection}
+			\subsection{Backdoor Creation and Remote Access}
+			\subsection{Non-Visual Command Execution and Process Hiding}
+			\subsection{Process Injection and Memory Manipulation}
+			\subsection{Persistence Techniques}
+			\subsection{Security Solution Performance Analysis}
+			\subsection{Comparative Analysis}
+			
 		\section{Discussion and Conclusion}
+			\subsection{Interpreation of Results}
+			\subsection{Comparison with Expected Outcomes/Litterature}
+			\subsection{Challenges Encountered and Limitations of the Study}
+			\subsection{Conclusion}
+			\subsection{Future Perspectives}
+			
 		\section{References}
 		
 	\end{document}
