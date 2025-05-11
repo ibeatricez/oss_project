@@ -6,3 +6,5 @@
 *.toc
 *.lot
 *.data.minted
+*.fls
+*.fdb_latexmk
