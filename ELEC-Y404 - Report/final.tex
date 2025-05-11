@@ -19,7 +19,7 @@
 		\newpage
 		
 		\begin{abstract}
-		This project investigates the efficacy of Windows security solutions, primarily focusing on Windows Defender, in detecting and responding to advanced stealthy attack techniques. The study evaluates a range of common attacker methodologies including the deployment of keyloggers, creation of backdoors for remote access, non-visual command execution leveraging built-in system tools, process injection for memory manipulation, and various persistence mechanisms designed to maintain unauthorized access. The evaluation involved executing these attack scenarios in a controlled environment while meticulously logging system behavior, network activity, and Windows event logs to analyze the detection capabilities and response of the security software.
+		This project investigates the efficacy of Windows security solutions, primarily focusing on Windows Defender, in detecting and responding to advanced stealthy attack techniques. The study evaluates a range of common attacker methodologies including the deployment of keyloggers, creation of backdoors for remote access, non-visual command execution leveraging built-in system tools, and a persistence mechanism designed to maintain unauthorized access. The evaluation involved executing these attack scenarios in a controlled environment while meticulously logging system behavior, network activity, and Windows event logs to analyze the detection capabilities and response of the security software.
 		\end{abstract}
 		
 		\newpage
@@ -135,13 +135,20 @@
 				\end{itemize}
 
 
-		\newpage
+
 		\section{Description}
 			This section details the setup of the test environment, configuration of security solutions, step-by-step implementation of the attacker techniques, and the strategy for monitoring and data collection.
 		
 			\subsection{Test Environment Setup}
-				Both attacker and victim runs the same OS that is Windows 11 Home. They are connected in the same sub-network via a closed Local Area Network through a Mobile Hotspot.\par
+				The Attacker uses Kali Linux as its OS, whereas the Defender uses Windows 11 Home. They are connected in the same sub-network via a closed Local Area Network through a Mobile Hotspot.\par
 				The tools used by the attacker essentially include Netcat, Windows Command Prompt and Python.
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=1\linewidth]{Pictures/test_lab_env}
+					\caption{Lab Environment}
+					\label{fig:testlabenv}
+				\end{figure}
+				
 			\subsection{Security Solution Configuration}
 				\textcolor{red}{[ADD ALL THE SECURITY TOOLS USED AND DESCRIPTION]}
 				
@@ -179,7 +186,7 @@
 						\end{enumerate}
 			
 				\subsubsection{Step 4 - Persistence}
-					The objective was to establish persistence using the Startup folder, and evaluate Windows Defender's ability to detect or prevent these modifications. To achieve that, the \texttt{'cmd\_commands.bat'} simply copied itself in the Startup folder
+					The objective was to establish persistence using the Startup folder, and evaluate Windows Defender's ability to detect or prevent these modifications. To achieve that, the \texttt{'cmd\_commands.bat'} simply copied itself in the Startup folder.
 				
 				
 				
