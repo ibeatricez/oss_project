@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.18)  10 MAY 2025 19:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (MiKTeX 24.4) (preloaded format=pdflatex 2024.11.18)  11 MAY 2025 11:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**./final.tex
-(final.tex
+**./draft_3.tex
+(draft_3.tex
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
 (C:\Users\sipak\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
@@ -447,8 +447,9 @@ tex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count308
 \l__pdf_internal_box=\box58
-) (final.aux (Content/TitlePage.aux))
-\openout1 = `final.aux'.
+)
+No file draft_3.aux.
+\openout1 = `draft_3.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
 LaTeX Font Info:    ... okay on input line 9.
@@ -499,9 +500,8 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring OFF on input line 9.
- (final.out) (final.out)
 \@outlinefile=\write4
-\openout4 = `final.out'.
+\openout4 = `draft_3.out'.
 
 
 *geometry* driver: auto-detecting
@@ -541,7 +541,7 @@ Package hyperref Info: Link coloring OFF on input line 9.
 \openout2 = `Content/TitlePage.aux'.
 
 (Content/TitlePage.tex
-<Images/logo.png, id=27, 730.22812pt x 231.11343pt>
+<Images/logo.png, id=3, 730.22812pt x 231.11343pt>
 File: Images/logo.png Graphic file (type png)
 <use Images/logo.png>
 Package pdftex.def Info: Images/logo.png  used on input line 5.
@@ -591,9 +591,10 @@ k/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc} <./Images/logo.png
 >])
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/phv/b/n' tried instead on input line 12.
- (final.toc)
+
+No file draft_3.toc.
 \tf@toc=\write5
-\openout5 = `final.toc'.
+\openout5 = `draft_3.toc'.
 
 
 
@@ -602,51 +603,360 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.13 		\newpage
-                [1
+l.13 	\newpage
+               [1
 
 
-] (final.lof)
+]
+No file draft_3.lof.
 \tf@lof=\write6
-\openout6 = `final.lof'.
+\openout6 = `draft_3.lof'.
 
 
 
-[2]
+[2] (Content/chapters.tex (content/chapters/introduction.tex)
+(content/chapters/background.tex
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 4.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 10.
+
+
+(C:\Users\sipak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 10.
+
+
+(C:\Users\sipak\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+<Pictures/windowssecuritylayer.png, id=22, 573.8238pt x 354.8457pt>
+File: Pictures/windowssecuritylayer.png Graphic file (type png)
+<use Pictures/windowssecuritylayer.png>
+Package pdftex.def Info: Pictures/windowssecuritylayer.png  used on input line 
+35.
+(pdftex.def)             Requested size: 500.484pt x 309.49835pt.
+
 
 [3]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 46.
+
+
+[4 <./Pictures/windowssecuritylayer.png>]
+! Undefined control sequence.
+l.110 \usetikzlibrary
+                     {shapes.geometric, arrows}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.112 \tikzstyle
+                {startstop} = [rectangle, rounded corners, minimum width=3cm...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.113 \tikzstyle
+                {process} = [rectangle, minimum width=3cm, minimum height=1c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.114 \tikzstyle
+                {decision} = [diamond, minimum width=3cm, minimum height=1cm...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.115 \tikzstyle
+                {arrow} = [thick,->,>=stealth]
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118 \begin{tikzpicture}
+                         [node distance=2cm]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.121 \node
+            (start) [startstop] {Start - Attacker Launches Hollowing Process};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.122 \node
+            (createproc) [process, below of=start] {CreateProcess() - (Suspe...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.123 \node
+            (allocmem) [process, below of=createproc] {VirtualAllocEx() - Al...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.124 \node
+            (writemem) [process, below of=allocmem] {WriteProcessMemory() - ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.125 \node
+            (changectx) [process, below of=writemem] {SetThreadContext() - P...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.126 \node
+            (resumethread) [process, below of=changectx] {ResumeThread() - E...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.127 \node
+            (end) [startstop, below of=resumethread] {Malicious Code Running...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.130 \draw
+            [arrow] (start) -- (createproc);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.131 \draw
+            [arrow] (createproc) -- (allocmem);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.132 \draw
+            [arrow] (allocmem) -- (writemem);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.133 \draw
+            [arrow] (writemem) -- (changectx);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.134 \draw
+            [arrow] (changectx) -- (resumethread);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.135 \draw
+            [arrow] (resumethread) -- (end);
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{center} on input line 117 ended by \end{tikzpicture}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 \end{tikzpicture}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+
+[5]
+
+LaTeX Warning: File `Pictures/Fig1_Tarrask-malware-creates-new-registry-keys-al
+ong-with-the-creation-of-new-scheduled-tasks.png' not found on input line 199.
+
+
+! Package pdftex.def Error: File `Pictures/Fig1_Tarrask-malware-creates-new-reg
+istry-keys-along-with-the-creation-of-new-scheduled-tasks.png' not found: using
+ draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.199 ...-the-creation-of-new-scheduled-tasks.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+
+[6]
+Overfull \hbox (14.42776pt too wide) in paragraph at lines 208--208
+[]        \T1/cmtt/m/n/10.95 schtasks /create /tn "Updater" /tr "C:\backdoor\pa
+yload.exe" /sc onlogon /ru SYSTEM[] 
+ []
+
+
+
+[7]
+<Pictures/test_lab_env.png, id=64, 574.18515pt x 364.9635pt>
+File: Pictures/test_lab_env.png Graphic file (type png)
+<use Pictures/test_lab_env.png>
+Package pdftex.def Info: Pictures/test_lab_env.png  used on input line 249.
+(pdftex.def)             Requested size: 400.38872pt x 254.50371pt.
+) (content/chapters/description.tex
+! Undefined control sequence.
+l.3 \chapter
+            {Description}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) (content/chapters/experimentalResults.tex
+
+[8 <./Pictures/test_lab_env.png>]
+
+[9]
+Overfull \hbox (9.46864pt too wide) in paragraph at lines 71--72
+\T1/cmr/m/n/10.95 This will lis-ten for the in-com-ing TCP con-nec-tion and sav
+e the re-ceived log data into \T1/cmtt/m/n/10.95 receivedlogs.txt\T1/cmr/m/n/10
+.95 . 
+ []
+
+
+
+[10]) (content/chapters/conclusion.tex
+! Undefined control sequence.
+l.3 \chapter
+            {Discussion and Conclusion}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+) (content/chapters/references.tex
+! Undefined control sequence.
+l.3 \chapter
+            {References}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+
+[11]))
 
 Package caption Warning: Unused \captionsetup[sub] on input line 6.
 See the caption package documentation for explanation.
 
 
 
-[4] (final.aux (Content/TitlePage.aux))
+[12] (draft_3.aux (Content/TitlePage.aux))
  ***********
 LaTeX2e <2024-11-01>
 L3 programming layer <2024-11-02>
  ***********
-Package rerunfilecheck Info: File `final.out' has not changed.
-(rerunfilecheck)             Checksum: 6003EE5041F9FFD91E795964FCAFCE2E;707.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `draft_3.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `draft_3.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  055CAE57F613982AED18C2FBCC617EAD;4667.
  ) 
 Here is how much of TeX's memory you used:
- 13670 strings out of 473682
- 218144 string characters out of 5719215
- 618755 words of memory out of 5000000
- 36555 multiletter control sequences out of 15000+600000
- 577064 words of font info for 54 fonts, out of 8000000 for 9000
+ 13875 strings out of 473682
+ 225934 string characters out of 5719215
+ 625350 words of memory out of 5000000
+ 36681 multiletter control sequences out of 15000+600000
+ 589067 words of font info for 79 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 82i,7n,85p,286b,461s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\sipak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm
-1000.pk> <C:\Users\sipak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecbx1000.pk> <C:\Users\sipak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\ecrm1095.pk> <C:\Users\sipak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecbx1095.pk><C:/Users/sipak/AppData/Local/Programs/MiKTeX/fonts/t
+ 82i,10n,85p,708b,725s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\sipak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1095.pk> <C:\Users\sipak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
+0\ectt1095.pk> <C:\Users\sipak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
+/dpi600\ecbx1095.pk> <C:\Users\sipak\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
+pen/ec/dpi600\ecrm1095.pk><C:/Users/sipak/AppData/Local/Programs/MiKTeX/fonts/t
 ype1/urw/helvetic/uhvb8a.pfb><C:/Users/sipak/AppData/Local/Programs/MiKTeX/font
 s/type1/urw/helvetic/uhvr8a.pfb>
-Output written on final.pdf (5 pages, 69232 bytes).
+Output written on draft_3.pdf (13 pages, 208933 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 12 named destinations out of 1000 (max. 500000)
- 54 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
